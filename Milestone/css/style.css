@@ -1,0 +1,199 @@
+/* CSS needed to center an element on the page */
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Reusable CSS added to a class where it's not repeated as often for Titles and Headings */
+.pageTitle {
+    text-align: center;
+    font-size: 4vw;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+.subHeading {
+    font-size: 2vw;
+    text-decoration: underline;
+    text-align: center;
+}
+
+/* Container for text where it can be seen against the background */
+.textContainer {
+    background-color: rgba(82, 34, 152, 0.3);
+    overflow: hidden;
+    padding: 10px;
+    color: #eae3f1;
+}
+
+/* Formatting for links to look like buttons */
+.button {
+    display: block;
+    color: white;
+    border: 2px solid #eae3f1;
+    text-align: center;
+    padding: 14px 16px;
+    background-color: #522398;
+    width: max-content;
+}
+
+/* CSS needed for Gradient Background */
+body {
+    margin: 0;
+    background: linear-gradient(180deg,
+            hsla(0, 0%, 100%, 1) 0%,
+            hsla(279, 82%, 22%, 1) 100%);
+    background-repeat: repeat-x;
+    background-size: cover;
+    font-family: 'Courgette', cursive;
+}
+/* CSS to center the Content in the Main Body */
+.mainBody
+{
+    height: max-content;
+    border: 15px #522398 solid;
+    padding: 5px;
+    width: 85%;
+}
+
+/* makes image size dynamic */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+video {
+    max-width: 85%;
+    height: auto;
+}
+
+/* formats paragraph font size and spaces it out from any bordering elements */
+p {
+    font-size: 18px;
+    padding: 5px;
+}
+
+summary
+{
+    font-size: 2vw;
+    text-decoration: underline;
+}
+
+/* formats an unorganized list into a navigation bar that sticks to the top of the page when you scroll past it  */
+ul {
+    list-style-type: none;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    overflow: hidden;
+    background-color: #522398;
+    width: 75%;
+}
+
+/* Aligns the list horizontally */
+li {
+    float: left;
+    font-size: 18px;
+}
+
+/* formats each nav list item into its own button */
+li a,
+.dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color: #522398;
+}
+
+/* Changes the background color of the button you hover over */
+li a:hover,
+.dropdown:hover .dropbtn {
+    background-color: #a68ac8;
+    color: #eae3f1;
+}
+
+/* Sets the background of the link to the page you are currently on */
+.active {
+    background-color: #eae3f1;
+    color: black;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #eae3f1;
+    padding: 14px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+th,td 
+{
+    font-size: 1vw;
+}
+
+/* Flexbox formatting */
+.flexContainer
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.row
+{
+    flex-direction: row;
+}
+.column
+{
+    flex-direction: column;
+    align-items: center;
+}
+.column img
+{
+    max-width: 75%;
+}
+/* For formatting the picture row layouts */
+.mainPicture
+{
+    max-width: 40%;
+}
+.sidePicture
+{
+    max-width: 30%;
+}
+.threeAcross
+{
+    max-width: 33%;
+}
+
+
+/* Animation Styling!!! */
+.animate
+{
+    width: 35%;
+    transition: width 2s, background-color 2s, transform 2s;
+}
+.animate:hover
+{
+    background-color: #a68ac8;
+    width: 50%;
+    transform: rotate(360deg);
+}

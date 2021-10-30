@@ -1,0 +1,122 @@
+<!--Kayla Currier
+    CST-120 Milestone 2
+    Page Header image & Social Logo Videos: Created by me using https://www.canva.com/
+    Some css: https://W3schools.com
+    Gradient BG code: https://coolors.co/gradient-maker/ffffff-470a68?position=0,100&opacity=100,100&type=linear&rotation=180
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/Milestone/css/style.css">
+    <title>Contact Me</title>   
+</head>
+
+<body>
+    <!-- page header image -->
+    <div style="align-items: center">
+        <img src="../Images/pageHeader.png" alt="Home page greeting Image" class="center"
+            style="padding-top: 25px; width: 40%" />
+    </div>
+
+    <!-- NavBar -->
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+            <a href="contactMe.html" class="dropbtn active">Contact Me</a>
+            <!-- <div class="dropdown-content">
+                <a href="../Images/KaylaCurrierResume2021.pdf" target="_blank">My Resume</a>
+            </div> -->
+          </li>
+          <li class="dropdown">
+            <a class="dropbtn" href="hobbies.html">Hobbies</a>
+            <div class="dropdown-content">
+                <a href="hobbies.html#Drawing">My Drawings</a>
+                <a href="hobbies.html#Painting">My Paintings</a>
+                <a href="hobbies.html#Designing">My Designs</a>
+            </div>
+        </li>
+        <li class="dropdown">
+            <a href="activities.html">Social Activities</a>
+            <div class="dropdown-content">
+                <a href="activities.html#Tech">Tech Club</a>
+                <a href="activities.html#Decram">DeCram Club</a>
+                <a href="activities.html#Friends">My Friends</a>
+                <a href="activities.html#Pets">My Pets</a>
+            </div>
+        </li>
+    </ul>
+
+    <!-- Main Body -->
+    <div class="center mainBody textContainer">
+        <h1 class="pageTitle">Contact Me:</h1>
+        <h2 class="subHeading">My Social Media:</h2>
+
+        <!-- Social Media Table -->
+        <table style="margin: auto;">
+            <caption style="display: none">
+                Social Media Links
+            </caption>
+            <thead>
+                <th id="instagram">
+                    <video controls autoplay>
+                        <source src="../Media/InstagramLogo.mp4" type="video/mp4" />
+                        Your browser does not support the video tag.
+                    </video>
+                </th>
+                <th id="linkedIn">
+                    <video controls autoplay>
+                        <source src="../Media/LinkedInLogo.mp4" type="video/mp4" />
+                        Your browser does not support the video tag.
+                    </video>
+                </th>
+                <th id="facebook">
+                    <video controls autoplay>
+                        <source src="../Media/FacebookLogo.mp4" type="video/mp4" />
+                        Your browser does not support the video tag.
+                    </video>
+                </th>
+            </thead>
+            <tbody>
+                <td>
+                    <a href="https://www.instagram.com/kitkat_currier/" target="_blank" class="button center">My Instagram</a>
+                </td>
+                <td>
+                    <a href="https://www.linkedin.com/in/kayla-currier/" target="_blank" class="button center">My Linked In</a>
+                </td>
+                <td>
+                    <a href="https://www.facebook.com/Kayla.KitKat.Currier/" target="_blank" class="button center">My Facebook</a>
+                </td>
+            </tbody>
+        </table>
+        <br />
+
+        <h2 class="subHeading">Other:</h2>
+        <table style="table-layout: fixed; margin: auto;">
+            <caption style="display: none;">Email and Phone #</caption>
+            <tr>
+                <th id="Email">School Email:</th>
+                <td>Kcurrier1@my.gcu.edu</td>
+            </tr>
+            <tr>
+                <th id="Phone#">Phone Number:</th>
+                <td>(760)799-1451</td>
+            </tr>
+        </table>
+
+        <!-- <br /><br />
+        <div style="overflow: hidden;">
+            <a href="../Images/KaylaCurrierResume2021.pdf" target="_blank" class="button center animate">View My Resume?</a>
+        </div>
+        <br /><br /> -->
+    </div>
+</body>
+
+</html>

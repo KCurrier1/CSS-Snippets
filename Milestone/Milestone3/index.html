@@ -1,0 +1,134 @@
+<!--Kayla Currier
+    CST-120 Milestone 2
+    Page Header image & Word Cloud GIF: Created by me using https://www.canva.com/
+    Some css: https://W3schools.com
+    Gradient BG code: https://coolors.co/gradient-maker/ffffff-470a68?position=0,100&opacity=100,100&type=linear&rotation=180
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/Milestone/css/style.css">
+    <title>Kayla Currier's Homepage</title>
+
+</head>
+
+<body>
+    <!-- page header image (ANIMATED) -->
+    <div style="align-items: center; overflow: hidden;">
+        <img src="../Images/homeHeader.png" alt="Home page greeting Image" 
+        class="center animate" style="padding: 25px;"/>
+    </div>
+    <br/>
+    <br/>
+
+    <!-- NavBar -->
+    <div style="overflow: hidden;">
+        <ul>
+            <li><a class="active" href="index.html">Home</a></li>
+            <li class="dropdown">
+                <a href="contactMe.html" class="dropbtn">Contact Me</a>
+                <div class="dropdown-content">
+                    <!-- the target attribute allows for the pdf to be opened in a new tab 
+                        Source: https://www.w3schools.com/tags/att_a_target.asp -->
+                    <!-- <a href="../Images/KaylaCurrierResume2021.pdf" target="_blank">My Resume</a> -->
+                </div>
+            </li>
+            <li class="dropdown">
+                <a class="dropbtn" href="hobbies.html">Hobbies</a>
+                <div class="dropdown-content">
+                    <a href="hobbies.html#Drawing">My Drawings</a>
+                    <a href="hobbies.html#Painting">My Paintings</a>
+                    <a href="hobbies.html#Designing">My Designs</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="activities.html">Social Activities</a>
+                <div class="dropdown-content">
+                    <a href="activities.html#Tech">Tech Club</a>
+                    <a href="activities.html#Decram">DeCram Club</a>
+                    <a href="activities.html#Friends">My Friends</a>
+                    <a href="activities.html#Pets">My Pets</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Main Body -->
+    <div class="center mainBody">
+        <!-- page title -->
+        <h1 class="pageTitle">Who Am I?</h1>
+
+        <!-- image of myself with name tag and caption -->
+        <div class="center" style="width: 50%">
+            <img src="../Images/Me.png" alt="Photo of Kayla Currier" class="center" style="margin: auto" />
+            <div style="text-align: center" class="textContainer">
+                <h1 class="subHeading">Kayla Currier</h1>
+                <p>
+                    <!-- I only wanted the top line underlined so I utilized the <u> tag instead of a style -->
+                    <u>Aspiring Software Developer</u><br /><br />
+                    * Loves web design<br />
+                    * Has a cute dog named Happy<br />
+                    * Hopes you have a good day :)
+                </p>
+            </div>
+        </div>
+        <div class="textContainer">
+            <!-- My background/About me paragraph w/title -->
+            <details>
+                <summary>Where I came from...</summary>
+                <p>I was born and raised in the small farm town of Blythe, California.
+                There was very little opportunity to do much of anything there so I
+                worked hard to get a good GPA in highschool where I could further my
+                education at Grand Canyon University. I was apart of numerous clubs as
+                well as captaining our Marching Band's small Colorguard team. My
+                mother is the Chief Nursing Officer of our local hospital, and my dad
+                has bounced through many maintenance jobs and has ultimately retired
+                due to his health. We have not always been this well off, and my mom
+                has worked hard to be where she is. We don't have the best
+                relationship but I do look up to her as someone who knows how to put
+                in effort to get what they want. I aspire to do the same, despite not
+                exactly following in her footsteps.</p>
+            </details>
+            <hr />
+            <!-- Word Cloud -->
+            <details>
+                <summary>How I describe myself...</summary>
+                <img src="../Images/WordCloud.gif" alt="A Word cloud of words that describe me" class="center"
+                    style="width: 75%" />
+            </details>
+            <hr />
+
+            <!-- A small paragraph of my experience as a woman in tech w/title -->
+            <details>
+                <summary>As a Woman in Tech...</summary>
+                <p>
+                    I was a Computer Programming Major for two years before switching to
+                    the new Bachelors of Science in Software Development degree. It is
+                    quite apparent that this is not a very "feminine" topic to study. This
+                    was very intimidating in the beginning but is also a big source of
+                    motivation for me. I aim to persevere and become a mentor for girls
+                    who want to pursue a career in this field. Although, since I have had
+                    time to develop a lot of my skills so far, I have taken a liking to
+                    more of the design aspect of website building. However, I don't want
+                    to be categorized as simply a designer, because it seems that is where
+                    many women are funneled into and get stuck. I want to prove that I can
+                    program from frontend to backend, without taking shortcuts on my
+                    database layers or turning in ugly looking website designs. I believe
+                    with a bit of determination and hard work, I can do it all well.
+                </p>
+                <!-- A button that connects to the Contact Me page -->
+                <!-- <a href="contactMe.html" class="button" style="float: right">Contact Me?</a> -->
+            </details>
+        </div>
+    </div>
+</body>
+
+</html>
